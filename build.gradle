@@ -3,13 +3,14 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.1'
+        classpath 'com.android.tools.build:gradle:3.6.3'
 
-        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:3.1.1"
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+//        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:3.1.1"
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+//        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
 
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -18,16 +19,17 @@ buildscript {
 }
 
 ext {
-    sdk = 24
-    buildTools = "24.0.1"
+    sdk = 29
+    buildTools = "29.0.3"
     minSdk = 15
     libraryVersion = "1.0.1"
-    supportVersion = "24.2.1"
+    supportVersion = "28.0.0"
 }
 
 allprojects {
     repositories {
         jcenter()
+        google()
     }
 }
 
